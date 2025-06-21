@@ -8,7 +8,6 @@ import utils
 previous_palette = [(0, 0, 0)] * config.NUM_LEDS
 
 def get_palette(sct, monitor):
-    # Преобразуем BGRA → RGB
     screenshot = cv2.cvtColor(np.array(sct.grab(monitor)), cv2.COLOR_BGRA2RGB)
     height, width, _ = screenshot.shape
 
